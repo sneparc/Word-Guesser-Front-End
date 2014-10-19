@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		body {
+			width: 400px;
+
+			text-align: center;
+		}
+
+		div {
+			margin-bottom: 20px;
+		}
+
+		.blanks {
+			font-size: 30px;
+		}
+
+		.letter_buttons button {
+			width: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="blanks">
+		<!-- overwrite this div to fill in the blanks -->
+		_ _ _ _
+	</div>
+
+	<div class="message"> 
+	<!-- use this div to let the user know if they guessed right or wrong,
+	     or whether they won or lost -->
+		Guess a letter to start!
+	</div>
+
+	<div class="letter_buttons">
+		<!-- disable these buttons as the user guesses them -->
+		<button onclick="guessLetter('A')">A</button>
+		<button>B</button>
+		<button>C</button>
+		<button>D</button>
+		<button>E</button>
+		<button>F</button>
+		<button>G</button>
+		<button>H</button>
+		<button>I</button>
+		<button>J</button>
+		<button>K</button>
+		<button>L</button>
+		<button>M</button>
+		<button>N</button>
+		<button>O</button>
+		<button>P</button>
+		<button>Q</button>
+		<button>R</button>
+		<button>S</button>
+		<button>T</button>
+		<button>U</button>
+		<button>V</button>
+		<button>W</button>
+		<button>X</button>
+		<button>Y</button>
+		<button>Z</button>
+	</div>
+
+	<div>Remaining Guesses: <span class="guesses_remaining">10</span></div>
+
+	<button id="newGame">New Game</button>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
